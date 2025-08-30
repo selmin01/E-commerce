@@ -53,3 +53,28 @@ O objetivo é criar uma aplicação moderna, responsiva e funcional, simulando u
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
+
+
+
+
+### Criando Projeto
+
+npx create-next-app@15.1.6
+
+npm install prisma@6.2.1
+
+npm install @prisma/client@6.2.1
+
+npx prisma init
+
+npx prisma migrate dev
+    name migration new -- add_initial_tables
+
+    -> aterar algum campo da tabela
+    npx prisma migrate dev -n rename-descripition-to-description
+
+##  Commit
+git status
+git add .
+git commit -m 'feat: add initial db tables' 
+
